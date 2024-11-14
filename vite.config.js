@@ -4,12 +4,12 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/vite-app",
+  base: "/",
   define: {
     "process.env": {},
   },
   build: {
-    outDir: "build",
-    assetsDir: "assets",
+    outDir: 'dist',  // The directory to output the build files
+    assetsDir: 'assets',  // Directory where assets will go
   },
 });
